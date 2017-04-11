@@ -3,9 +3,7 @@ package com.mygdx.game.screens;
 import com.badlogic.gdx.Game;
 import com.badlogic.gdx.Screen;
 import com.badlogic.gdx.scenes.scene2d.Stage;
-import com.badlogic.gdx.scenes.scene2d.ui.Container;
 import com.badlogic.gdx.scenes.scene2d.ui.Image;
-import com.badlogic.gdx.scenes.scene2d.ui.Label;
 
 public class InicialScreen implements Screen {
 
@@ -15,7 +13,6 @@ public class InicialScreen implements Screen {
     public InicialScreen(Game game) {
         this.game = game;
         this.stage = new Stage();
-
         this.stage.addActor(new Image());
     }
 
