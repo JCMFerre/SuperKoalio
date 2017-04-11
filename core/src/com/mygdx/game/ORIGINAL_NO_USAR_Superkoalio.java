@@ -22,6 +22,7 @@ import com.badlogic.gdx.math.Rectangle;
 import com.badlogic.gdx.math.Vector2;
 import com.badlogic.gdx.utils.Array;
 import com.badlogic.gdx.utils.Pool;
+import com.mygdx.game.helpers.AssetManager;
 
 /**
  * Super Mario Brothers-like very basic platformer, using a tile map built using <a href="http://www.mapeditor.org/">Tiled</a> and a
@@ -31,7 +32,7 @@ import com.badlogic.gdx.utils.Pool;
  *
  * @author mzechner
  */
-public class Superkoalio extends ApplicationAdapter {
+public class ORIGINAL_NO_USAR_Superkoalio extends ApplicationAdapter {
     /**
      * The player character, has state and state time,
      */
@@ -58,10 +59,12 @@ public class Superkoalio extends ApplicationAdapter {
     private TiledMap map;
     private OrthogonalTiledMapRenderer renderer;
     private OrthographicCamera camera;
+    //
     private Texture koalaTexture;
     private Animation<TextureRegion> stand;
     private Animation<TextureRegion> walk;
     private Animation<TextureRegion> jump;
+    //
     private Koala koala;
     private Pool<Rectangle> rectPool = new Pool<Rectangle>() {
         @Override
@@ -79,7 +82,8 @@ public class Superkoalio extends ApplicationAdapter {
     @Override
     public void create() {
         // load the koala frames, split them, and assign them to Animations
-        koalaTexture = new Texture("koalio.png");
+        koalaTexture = AssetManager.koalaTexture;
+
         TextureRegion[] regions = TextureRegion.split(koalaTexture, 18, 26)[0];
         stand = new Animation(0, regions[0]);
         jump = new Animation(0, regions[1]);
@@ -93,7 +97,7 @@ public class Superkoalio extends ApplicationAdapter {
         Koala.HEIGHT = 1 / 16f * regions[0].getRegionHeight();
 
         // load the map, set the unit scale to 1/16 (1 unit == 16 pixels)
-        map = new TmxMapLoader().load("level1.tmx");
+        //map = new TmxMapLoader().load("level1.tmx");
         renderer = new OrthogonalTiledMapRenderer(map, 1 / 16f);
 
         // create an orthographic camera, shows us 30x20 units of the world
