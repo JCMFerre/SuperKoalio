@@ -10,9 +10,6 @@ public class CheckPoint {
         this.y = y;
     }
 
-    public CheckPoint() {
-    }
-
     public float getX() {
         return x;
     }

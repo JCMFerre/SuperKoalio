@@ -16,10 +16,11 @@ import com.mygdx.game.helpers.Settings;
 
 public class InicialScreen implements Screen {
 
-    private Game game;
+    private final Game game;
     private Stage stage;
 
     public InicialScreen(Game game) {
+        // Hay que ser preciso con los botones porque si no, no van.
         this.game = game;
         configCamara();
         this.stage.addActor(new Image(AssetManager.backgroundTexture));
@@ -31,9 +32,9 @@ public class InicialScreen implements Screen {
         TextButton.TextButtonStyle textButtonStyle = new TextButton.TextButtonStyle();
         textButtonStyle.font = new BitmapFont();
         TextButton btnJugar = new TextButton("", textButtonStyle);
+        btnJugar.setTransform(true);
         btnJugar.setWidth(3f);
         btnJugar.setHeight(1f);
-        btnJugar.setTransform(true);
         btnJugar.setScale(2f);
         btnJugar.setPosition(135 + 25f, 142 - 3f);
         btnJugar.addListener(new ChangeListener() {
@@ -43,9 +44,9 @@ public class InicialScreen implements Screen {
             }
         });
         TextButton btnSalir = new TextButton("", textButtonStyle);
+        btnSalir.setTransform(true);
         btnSalir.setWidth(2f);
         btnSalir.setHeight(1f);
-        btnSalir.setTransform(true);
         btnSalir.setScale(2f);
         btnSalir.setPosition(130f + 30f, 95f - 5f);
         btnSalir.addListener(new ChangeListener() {

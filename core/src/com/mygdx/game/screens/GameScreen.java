@@ -13,12 +13,12 @@ import com.mygdx.game.objects.Koala;
 
 public class GameScreen implements Screen {
 
-    private Game game;
-    private Koala koala;
+    private final Game game;
+    private final Koala koala;
     private OrthographicCamera camera;
     private OrthogonalTiledMapRenderer renderer;
 
-    private CheckPoint checkPoint;
+    private final CheckPoint checkPoint;
 
     public GameScreen(Game game) {
         this.game = game;
