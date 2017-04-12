@@ -129,8 +129,8 @@ public class Koala {
             if (koalaRect.overlaps(tile)) {
                 if (velocity.y > 0) {
                     position.y = tile.y - height;
-                    TiledMapTileLayer layer = (TiledMapTileLayer) nivel1.getLayers().get("walls");
-                    layer.setCell((int) tile.x, (int) tile.y, null);
+                    //TiledMapTileLayer layer = (TiledMapTileLayer) nivel1.getLayers().get("walls");
+                    //layer.setCell((int) tile.x, (int) tile.y, null);
                 } else {
                     position.y = tile.y + tile.height;
                     grounded = true;
