@@ -41,7 +41,9 @@ public class GameScreen implements Screen {
     }
 
     private void lanzarScreenInicial() {
-        game.setScreen(new InicialScreen(game));
+        koala.getPosition().x = 20;
+        koala.getPosition().y = 20;
+        //game.setScreen(new InicialScreen(game));
     }
 
     @Override
