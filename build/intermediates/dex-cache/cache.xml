@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        is-multidex="false"
+        jar="D:\Proyectos\AndroidStudioProjects\SuperKoalio\core\build\libs\core-1.0.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="61bc952b046b376fd89234a466b55e70f3863339">
+        <dex dex="D:\Proyectos\AndroidStudioProjects\SuperKoalio\android\build\intermediates\pre-dexed\debug\core-1.0_7d209a092475b7ce812e3bfcf4fa9c0054657da9.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\nrpc\.gradle\caches\modules-2\files-2.1\com.badlogicgames.gdx\gdx\1.9.6\47d1e9b890e364ec28f128e9bb3b9a12a94c164\gdx-1.9.6.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="047d1e9b890e364ec28f128e9bb3b9a12a94c164">
+        <dex dex="D:\Proyectos\AndroidStudioProjects\SuperKoalio\android\build\intermediates\pre-dexed\debug\gdx-1.9.6_f5526ce4c6f3a73b36263492d35b796597a37fe3.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\nrpc\.gradle\caches\modules-2\files-2.1\com.badlogicgames.gdx\gdx-backend-android\1.9.6\57c2831c870743712b808384187ea856e541878f\gdx-backend-android-1.9.6.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="57c2831c870743712b808384187ea856e541878f">
+        <dex dex="D:\Proyectos\AndroidStudioProjects\SuperKoalio\android\build\intermediates\pre-dexed\debug\gdx-backend-android-1.9.6_398d3c38ef1b1dd103f042beabbfae97aa8ecaea.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\nrpc\.gradle\caches\modules-2\files-2.1\com.badlogicgames.gdx\gdx-box2d\1.9.6\c249ef4060a4fada952f278455c8f7b9cba3c18a\gdx-box2d-1.9.6.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="c249ef4060a4fada952f278455c8f7b9cba3c18a">
+        <dex dex="D:\Proyectos\AndroidStudioProjects\SuperKoalio\android\build\intermediates\pre-dexed\debug\gdx-box2d-1.9.6_7d45bc3cfcd017eb94af70dd0256725e5730788d.jar" />
+    </item>
+
+</items>

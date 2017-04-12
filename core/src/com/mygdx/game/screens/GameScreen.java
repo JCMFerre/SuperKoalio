@@ -42,17 +42,22 @@ public class GameScreen implements Screen {
         koala.draw(renderer.getBatch());
         comprobarPosiciones();
         if (koala.isDead()) {
-            lanzarScreenInicial();
+            ponerKoalaEnCheckPoint();
         }
+    }
+
+    private void ponerKoalaEnCheckPoint() {
+        koala.getPosition().x = checkPoint.getX();
+        koala.getPosition().y = checkPoint.getY();
     }
 
     private void comprobarPosiciones() {
         Vector2 posKoala = koala.getPosition();
         float x = posKoala.x, y = posKoala.y;
-        if (y == 6 && (x <= 106 && x >= 102)) {
+        if (checkPoint.getY() != 10 && y == 6 && (x <= 106 && x >= 102)) {
             cambiarPosCheckPoint(104, 10f);
         } else if (y == 7 && (x <= 189 && x >= 185)) {
-            Gdx.app.log("COMPLETADO", "HAS GANADO");
+            lanzarScreenInicial();
         }
     }
 
@@ -62,9 +67,7 @@ public class GameScreen implements Screen {
     }
 
     private void lanzarScreenInicial() {
-        koala.getPosition().x = checkPoint.getX();
-        koala.getPosition().y = checkPoint.getY();
-        //game.setScreen(new InicialScreen(game));
+        game.setScreen(new InicialScreen(game));
     }
 
     @Override
