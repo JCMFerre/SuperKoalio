@@ -1,5 +1,5 @@
 #Internal package file, do not edit.
-#Wed Apr 12 22:59:46 CEST 2017
+#Wed Apr 12 23:09:51 CEST 2017
 25.file=D\:\\Proyectos\\AndroidStudioProjects\\SuperKoalio\\android\\build\\intermediates\\res\\resources-debug.ap_\\resources.arsc
 25.base=D\:\\Proyectos\\AndroidStudioProjects\\SuperKoalio\\android\\build\\intermediates\\res\\resources-debug.ap_
 22.set=NATIVE_RESOURCE
